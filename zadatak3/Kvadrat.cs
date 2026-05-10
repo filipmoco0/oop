@@ -1,37 +1,32 @@
 using System;
-using System.Collections.Generic;
 
-class Kvadrat : Pravokutnik
+namespace Zadatak3;
+
+public class Kvadrat : Pravokutnik, IGeometrijskiLik
 {
-    public Kvadrat(float a, string b) : base(a, a, b)
+    public Kvadrat() : base(1, 1)
     {
-    }
-    public Kvadrat()
-    {
-        _a = 1;
     }
 
-    ~Kvadrat()
+    public Kvadrat(float a) : base(a, a)
     {
-        Console.WriteLine("Unisten Kvadrat!");
-    }
-    
-    public Kvadrat(float a)
-    {
-        _a = a;
     }
 
-    public override void Tip()
+    public Kvadrat(string bo, float a) : base(bo, a, a)
+    {
+    }
+
+    public void Tip()
     {
         Console.WriteLine("Kvadrat sa stranicom duljine " + _a);
     }
 
-    public override float Povrsina()
+    public float Povrsina()
     {
         return _a * _a;
     }
 
-    public override float Opseg()
+    public float Opseg()
     {
         return 4 * _a;
     }
