@@ -1,43 +1,41 @@
 using System;
-using System.Collections.Generic;
 
+namespace Zadatak3;
 
-class Krug : GeometrijskiLik
+public class Krug : IGeometrijskiLik, IUsporediPovrsinu<Krug>
 {
-    public Krug(float polumjer, string b) : base(b)
-    {
-        _r = polumjer;
-    }
-    
-    private float _r;
+    private float r;
 
-    public Krug()
+    public string Boja { get; set; }
+
+    public Krug(string boja, float r)
     {
-        _r = 1;
-    }
-    
-    ~Krug()
-    {
-        Console.WriteLine("Unisten Krug!");
+        Boja = boja;
+        this.r = r;
     }
 
-    public Krug(float polumjer)
+    public void Tip()
     {
-        _r = polumjer;
+        Console.WriteLine("Krug polumjera " + r);
     }
 
-    public override void Tip()
+    public float Povrsina()
     {
-        Console.WriteLine("Krug polumjera " + _r);
+        return 3.14f * r * r;
     }
 
-    public override float Povrsina()
+    public float Opseg()
     {
-        return _r * _r * (float)(Math.PI);
+        return 2 * 3.14f * r;
     }
 
-    public override float Opseg()
+    public int UsporediPovrsinu(Krug tmp)
     {
-        return 2 * _r * (float)Math.PI;
+        if (Povrsina() == tmp.Povrsina())
+            return 0;
+        else if (Povrsina() > tmp.Povrsina())
+            return 1;
+        else
+            return 2;
     }
 }
