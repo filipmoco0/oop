@@ -1,13 +1,10 @@
 # Zadatci LV4
 
+## Zadatak 1
+### [Otvori](https://github.com/filipmoco0/oop/blob/main/zadatak1.cs)
+
+## Zadatak 2
+### [Otvori](https://github.com/filipmoco0/oop/blob/main/zadatak2.cs)
+
 ## Zadatak 3
-### [Otvori](https://github.com/filipmoco0/oop/blob/main/zadatak3)
-
-## Zadatak 4
-### [Otvori](https://github.com/filipmoco0/oop/blob/main/zadatak4)
-
-## Zadatak 5
-### [Otvori](https://github.com/filipmoco0/oop/blob/main/zadatak5)
-
-## Zadatak 6
-### [Otvori](https://github.com/filipmoco0/oop/blob/main/zadatak6)
+### [Otvori](https://github.com/filipmoco0/oop/blob/main/zadatak3.cs)
