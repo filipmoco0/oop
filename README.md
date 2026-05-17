@@ -1,4 +1,4 @@
-# Zadatci LV4
+# Zadatci LV5
 
 ## Zadatak 1
 ### [Otvori](https://github.com/filipmoco0/oop/blob/main/zadatak1.cs)
